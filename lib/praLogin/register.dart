@@ -21,16 +21,12 @@ class _registerState extends State<register> {
         children: [
           Center(
             child: Container(
-              margin: EdgeInsets.fromLTRB(0, 135, 0, 50),
-              child: Text(
-                "LOGO",
-                style: TextStyle(fontSize: 42, fontWeight: FontWeight.w900),
-              ),
-            ),
+                margin: EdgeInsets.fromLTRB(0, 10, 0, 0),
+                child: Image(image: AssetImage("assets/images/logodinom.png"))),
           ),
           Container(
             width: 300,
-            height: 380,
+            height: 370,
             margin: EdgeInsets.fromLTRB(20, 20, 20, 20),
             padding: EdgeInsets.fromLTRB(20, 35, 20, 20),
             decoration: BoxDecoration(
@@ -121,7 +117,7 @@ class _registerState extends State<register> {
           ),
           Container(
             height: 50,
-            margin: EdgeInsets.fromLTRB(45, 20, 45, 0),
+            margin: EdgeInsets.fromLTRB(45, 10, 45, 0),
             child: ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -140,9 +136,6 @@ class _registerState extends State<register> {
                   shape: ContinuousRectangleBorder(
                       borderRadius: BorderRadius.circular(100))),
             ),
-          ),
-          SizedBox(
-            height: 5,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,

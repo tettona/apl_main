@@ -1,3 +1,5 @@
+import 'package:apl_main/home.dart';
+
 import 'package:apl_main/praLogin/register.dart';
 import 'package:flutter/material.dart';
 
@@ -19,12 +21,8 @@ class _loginState extends State<login> {
         children: [
           Center(
             child: Container(
-              margin: EdgeInsets.fromLTRB(0, 135, 0, 100),
-              child: Text(
-                "LOGO",
-                style: TextStyle(fontSize: 42, fontWeight: FontWeight.w900),
-              ),
-            ),
+                margin: EdgeInsets.fromLTRB(0, 30, 0, 30),
+                child: Image(image: AssetImage("assets/images/logodinom.png"))),
           ),
           Container(
             width: 300,
@@ -83,10 +81,10 @@ class _loginState extends State<login> {
             margin: EdgeInsets.fromLTRB(45, 20, 45, 0),
             child: ElevatedButton(
               onPressed: () {
-                Navigator.push(
+                Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const login(),
+                      builder: (context) => const home(),
                     ));
               },
               child: Text("Masuk!",
