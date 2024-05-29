@@ -1,5 +1,5 @@
+import 'package:apl_main/detailPerangkat/deviceDinom.dart';
 import 'package:apl_main/page/notifikasi.dart';
-import 'package:apl_main/praLogin/login.dart';
 import 'package:flutter/material.dart';
 
 class dashboard extends StatefulWidget {
@@ -68,7 +68,7 @@ class boxPackage extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => login()),
+              MaterialPageRoute(builder: (context) => deviceDinom()),
             );
           },
           child: Container(
@@ -81,15 +81,14 @@ class boxPackage extends StatelessWidget {
               child:
                   Row(crossAxisAlignment: CrossAxisAlignment.center, children: [
                 CircleAvatar(
-                  child: Icon(
-                    Icons.markunread_mailbox_outlined,
-                    size: 50,
-                    color: Colors.black,
-                  ),
-                  backgroundColor: Colors.transparent,
+                  backgroundColor: Color.fromRGBO(217, 217, 217, 1),
+                  radius: 25,
+                  child: Image(
+                      image: AssetImage("assets/images/mailbox_flag.png"),
+                      height: 30),
                 ),
                 Container(
-                  margin: EdgeInsets.fromLTRB(32, 10, 10, 10),
+                  margin: EdgeInsets.fromLTRB(20, 10, 0, 10),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [

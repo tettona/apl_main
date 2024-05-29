@@ -23,12 +23,9 @@ class praLogin extends StatelessWidget {
             Column(
               children: [
                 Container(
-                    margin: EdgeInsets.fromLTRB(0, 135, 0, 50),
-                    child: Text(
-                      "LOGO",
-                      style:
-                          TextStyle(fontSize: 42, fontWeight: FontWeight.w900),
-                    )),
+                    margin: EdgeInsets.fromLTRB(0, 20, 0, 0),
+                    child: Image(
+                        image: AssetImage("assets/images/logodinom.png"))),
                 Text("Terima Paket",
                     style: TextStyle(letterSpacing: 4, fontSize: 19)),
                 Text("Tanpa Ribet",
@@ -36,7 +33,7 @@ class praLogin extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: 200,
+              height: 160,
             ),
             Container(
               height: 50,

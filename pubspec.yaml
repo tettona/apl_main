@@ -62,6 +62,8 @@ flutter:
     - assets/images/bg.png
     - assets/images/zeta.png
     - assets/images/logodinom.png
+    - assets/images/letsicons_back.png
+    - assets/images/mailbox_flag.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
