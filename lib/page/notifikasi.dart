@@ -22,7 +22,8 @@ class _notifikasiState extends State<notifikasi> {
                   onTap: () {
                     Navigator.pop(context);
                   },
-                  child: Icon(Icons.arrow_back)),
+                  child: Image(
+                      image: AssetImage("assets/images/letsicons_back.png"))),
               Text(
                 "Notikasi",
                 style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
@@ -67,7 +68,7 @@ class notifBox extends StatelessWidget {
     return Container(
       width: 180,
       height: 90,
-      margin: EdgeInsets.fromLTRB(20, 6, 20, 6),
+      margin: EdgeInsets.fromLTRB(15, 6, 15, 6),
       decoration: BoxDecoration(
           color: Colors.white, borderRadius: BorderRadius.circular(20)),
       child: Container(

@@ -46,7 +46,8 @@ class praLogin extends StatelessWidget {
                         builder: (context) => const login(),
                       ));
                 },
-                child: Text("Masuk", style: TextStyle(fontSize: 20)),
+                child: Text("Masuk",
+                    style: TextStyle(fontSize: 20, color: Colors.white)),
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Color.fromRGBO(31, 233, 255, 1),
                     shape: ContinuousRectangleBorder(
@@ -66,7 +67,8 @@ class praLogin extends StatelessWidget {
                         builder: (context) => const register(),
                       ));
                 },
-                child: Text("Buat Akun?", style: TextStyle(fontSize: 20)),
+                child: Text("Buat Akun?",
+                    style: TextStyle(fontSize: 20, color: Colors.white)),
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.transparent,
                     side: BorderSide(color: Color.fromRGBO(31, 233, 255, 1)),

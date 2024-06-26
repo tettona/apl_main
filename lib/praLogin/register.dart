@@ -129,6 +129,7 @@ class _registerState extends State<register> {
               child: Text("Buat Akun!",
                   style: TextStyle(
                       fontSize: 20,
+                      color: Colors.white,
                       fontWeight: FontWeight.w500,
                       letterSpacing: 2)),
               style: ElevatedButton.styleFrom(

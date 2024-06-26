@@ -39,7 +39,7 @@ class _dashboardState extends State<dashboard> {
                   ),
                 ),
                 SizedBox(
-                  width: 13,
+                  width: 10,
                 ),
                 Icon(
                   Icons.add,

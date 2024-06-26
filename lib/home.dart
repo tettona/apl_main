@@ -23,7 +23,6 @@ class _homeState extends State<home> {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: CircleAvatar(
         radius: 30,
-        backgroundColor: Colors.blueGrey.shade400,
         child: FloatingActionButton(
           onPressed: () async {
             scanner.scan();
@@ -35,20 +34,17 @@ class _homeState extends State<home> {
           ),
           backgroundColor: Colors.white,
           foregroundColor: Colors.black,
-          elevation: 0,
-          // shape: BeveledRectangleBorder(
-          //     // borderRadius: BorderRadius.circular(20.0),
-          //     // side: BorderSide(color: Colors.blue, width: 2.0, style: BorderStyle.solid)
-          //     ),
-          // mini: true,
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
         ),
       ),
       bottomNavigationBar: BottomAppBar(
           notchMargin: 5.0,
           color: Colors.white,
+          clipBehavior: Clip.antiAlias,
           shape: CircularNotchedRectangle(),
           child: Container(
-            height: 55,
+            height: 50,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [

@@ -90,6 +90,7 @@ class _loginState extends State<login> {
               child: Text("Masuk!",
                   style: TextStyle(
                       fontSize: 20,
+                      color: Colors.white,
                       fontWeight: FontWeight.w500,
                       letterSpacing: 2)),
               style: ElevatedButton.styleFrom(

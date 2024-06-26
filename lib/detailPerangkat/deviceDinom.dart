@@ -1,3 +1,4 @@
+import 'package:apl_main/detailPerangkat/galeri_foto.dart';
 import 'package:flutter/material.dart';
 
 class deviceDinom extends StatefulWidget {
@@ -48,7 +49,8 @@ class _deviceDinomState extends State<deviceDinom> {
                     Container(
                         width: 195,
                         height: 320,
-                        color: Colors.green,
+                        margin: EdgeInsets.all(5),
+                        color: Colors.white,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -60,13 +62,17 @@ class _deviceDinomState extends State<deviceDinom> {
                                       "assets/images/mailbox_flag.png"),
                                   height: 80),
                             ),
-                            Text("Model",
-                                style: TextStyle(
-                                    fontSize: 16, fontWeight: FontWeight.bold)),
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
+                              child: Text("Model",
+                                  style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold)),
+                            ),
                             Text(
                               "XZ - M3352",
                               style: TextStyle(
-                                  fontSize: 16, fontWeight: FontWeight.w300),
+                                  fontSize: 16, fontWeight: FontWeight.w400),
                             )
                           ],
                         ))
@@ -75,64 +81,90 @@ class _deviceDinomState extends State<deviceDinom> {
                 Column(
                   children: [
                     Container(
-                      margin: EdgeInsets.fromLTRB(0, 5, 0, 5),
-                      width: 195,
+                      margin: EdgeInsets.fromLTRB(0, 5, 0, 0),
+                      width: 185,
                       height: 100,
-                      color: Colors.amber,
+                      color: Colors.white,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
-                            "Nama Perangkat",
-                            style: TextStyle(
-                                fontSize: 18, fontWeight: FontWeight.bold),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              "Nama Perangkat",
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
                           ),
-                          Text(
-                            "Rumah Vestia",
-                            style: TextStyle(
-                                fontSize: 16, fontWeight: FontWeight.w300),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(8, 0, 0, 0),
+                            child: Text(
+                              "Rumah Vestia",
+                              style: TextStyle(
+                                  fontSize: 16, fontWeight: FontWeight.w400),
+                            ),
                           )
                         ],
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.fromLTRB(0, 5, 0, 5),
-                      width: 195,
+                      margin: EdgeInsets.fromLTRB(0, 5, 0, 0),
+                      width: 185,
                       height: 100,
-                      color: Colors.amber,
+                      color: Colors.white,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
-                            "Alamat",
-                            style: TextStyle(
-                                fontSize: 18, fontWeight: FontWeight.bold),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(8, 8, 0, 0),
+                            child: Text(
+                              "Alamat",
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
                           ),
-                          Text(
-                            "Jl. Ahmad Yani, Tlk. Tering, Kec. Batam ...",
-                            style: TextStyle(
-                                fontSize: 16, fontWeight: FontWeight.w300),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(8, 0, 0, 0),
+                            child: Text(
+                              "Jl. Ahmad Yani, Tlk. Tering, Kec. Batam ...",
+                              style: TextStyle(
+                                  fontSize: 14, fontWeight: FontWeight.w400),
+                            ),
                           )
                         ],
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.fromLTRB(0, 5, 0, 5),
-                      width: 195,
+                      margin: EdgeInsets.fromLTRB(0, 5, 0, 0),
+                      width: 185,
                       height: 100,
-                      color: Colors.amber,
+                      color: Colors.white,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
-                            "Terakhir Dibuka",
-                            style: TextStyle(
-                                fontSize: 18, fontWeight: FontWeight.bold),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              "Terakhir Dibuka",
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
                           ),
-                          Text(
-                            "12:55 WIB 04/03/2024",
-                            style: TextStyle(
-                                fontSize: 16, fontWeight: FontWeight.w300),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(8, 0, 0, 0),
+                            child: Text(
+                              "12:55 WIB",
+                              style: TextStyle(
+                                  fontSize: 16, fontWeight: FontWeight.w400),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(8, 0, 0, 0),
+                            child: Text(
+                              "04/03/2024",
+                              style: TextStyle(
+                                  fontSize: 16, fontWeight: FontWeight.w300),
+                            ),
                           )
                         ],
                       ),
@@ -141,12 +173,74 @@ class _deviceDinomState extends State<deviceDinom> {
                 )
               ],
             ),
+            SizedBox(
+              height: 30,
+            ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                ElevatedButton(onPressed: () {}, child: Text("data")),
-                ElevatedButton(onPressed: () {}, child: Text("data"))
+                Container(
+                    width: 180,
+                    height: 60,
+                    child: ElevatedButton(
+                        onPressed: () {},
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Text(
+                              "Buka kunci",
+                              style: TextStyle(fontSize: 16),
+                            ),
+                            Icon(Icons.lock)
+                          ],
+                        ))),
+                Container(
+                    width: 180,
+                    height: 60,
+                    child: ElevatedButton(
+                        onPressed: () {},
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Text(
+                              "Ubah",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 16),
+                            ),
+                            Icon(Icons.edit_square)
+                          ],
+                        )))
               ],
-            )
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Center(
+                child: Container(
+                    width: 370,
+                    height: 60,
+                    child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => GalleryPage(),
+                              ));
+                        },
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Text(
+                              "Buka Galeri",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 16),
+                            ),
+                            Icon(
+                              Icons.photo_size_select_actual,
+                              size: 30,
+                            )
+                          ],
+                        ))))
           ],
         ));
   }
